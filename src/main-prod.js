@@ -3,13 +3,13 @@ import App from './App.vue'
 import router from './router'
 import './assets/css/global.css'
 import axios from 'axios'
-import ElementUi from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// import ElementUi from 'element-ui'
 // 导入 NProgress
 import NProgress from 'nprogress'
-import 'nprogress/nprogress.css'
+// import 'element-ui/lib/theme-chalk/index.css'
+// import 'nprogress/nprogress.css'
 
-Vue.use(ElementUi)
+// Vue.use(ElementUi)
 
 axios.defaults.baseURL = 'http://175.178.175.236:8889'
 
