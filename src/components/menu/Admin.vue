@@ -5,17 +5,14 @@
       <div>
         <span>学生管理系统</span>
       </div>
-      <el-button type="info"
-                 @click="logout">退出</el-button>
+      <el-button @click="logout">退出</el-button>
     </el-header>
     <!-- 页面主体区域 -->
     <el-container>
       <!-- 侧边栏 -->
       <el-aside>
         <!-- 侧边栏菜单区域 -->
-        <el-menu background-color="#333744"
-                 text-color="#fff"
-                 @open="handleOpen"
+        <el-menu @open="handleOpen"
                  default-active="0">
           <!-- 一级菜单 -->
           <el-submenu v-for="(item,index) in menulist"
@@ -82,7 +79,7 @@ export default {
     height: 100%;
   }
   .el-header {
-    background-color: #373d41;
+    background-color: #276fba;
     display: flex;
     justify-content: space-between;
     padding-left: 0;
@@ -99,8 +96,9 @@ export default {
   }
 
   .el-aside {
-    background-color: #333744;
+    background-color: #eee;
     .el-menu {
+      margin-top: 20px;
       border-right: none;
     }
   }

@@ -11,9 +11,9 @@ import 'nprogress/nprogress.css'
 
 Vue.use(ElementUi)
 
-axios.defaults.baseURL = 'http://175.178.175.236:8889'
+// axios.defaults.baseURL = 'http://175.178.175.236:8889'
 
-// axios.defaults.baseURL = 'http://localhost:3000'
+axios.defaults.baseURL = 'http://localhost:3000'
 
 // proxy代理服务器，根目录下会转发到http://localhost:3000，解决了开发阶段跨域问题
 // axios.defaults.baseURL = '/'
